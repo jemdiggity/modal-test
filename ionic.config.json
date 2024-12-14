@@ -1,0 +1,7 @@
+{
+  "name": "modal-test",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "vue-vite"
+}

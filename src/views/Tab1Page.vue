@@ -12,7 +12,6 @@
         </ion-toolbar>
       </ion-header>
       <ion-button id="open-modal" expand="block">Open</ion-button>
-
       <p>{{ message }}</p>
       <InlineModal v-model="message"></InlineModal>
     </ion-content>

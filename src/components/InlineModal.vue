@@ -1,5 +1,5 @@
 <template>
-  <ion-modal ref="modal" trigger="open-modal" @willDismiss="onWillDismiss">
+  <ion-modal ref="modal" :trigger="trigger" @willDismiss="onWillDismiss">
     <ion-header>
       <ion-toolbar>
         <ion-buttons slot="start">
@@ -43,6 +43,7 @@ import { ref } from "vue";
 const modal = ref();
 const input = ref();
 const model = defineModel();
+const { trigger } = defineProps(["trigger"]);
 
 const cancel = () => modal.value.$el.dismiss(null, "cancel");
 

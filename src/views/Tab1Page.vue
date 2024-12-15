@@ -11,9 +11,9 @@
           <ion-title size="large">Tab 1</ion-title>
         </ion-toolbar>
       </ion-header>
-      <ion-button id="open-modal" expand="block">Open</ion-button>
+      <ion-button id="open_modal1" expand="block">Open</ion-button>
       <p>{{ message }}</p>
-      <InlineModal v-model="message"></InlineModal>
+      <InlineModal v-model="message" trigger="open_modal1"></InlineModal>
     </ion-content>
   </ion-page>
 </template>

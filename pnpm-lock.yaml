@@ -26,6 +26,9 @@ importers:
       '@capacitor/status-bar':
         specifier: 6.0.2
         version: 6.0.2(@capacitor/core@6.2.0)
+      '@ionic/core':
+        specifier: ^8.4.1
+        version: 8.4.1
       '@ionic/vue':
         specifier: ^8.0.0
         version: 8.4.1

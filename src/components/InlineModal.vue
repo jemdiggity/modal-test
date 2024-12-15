@@ -42,6 +42,8 @@ import { ref } from "vue";
 
 const modal = ref();
 const input = ref();
+const model = defineModel();
+
 const cancel = () => modal.value.$el.dismiss(null, "cancel");
 
 const confirm = () => {
@@ -51,7 +53,7 @@ const confirm = () => {
 
 const onWillDismiss = (ev: CustomEvent<OverlayEventDetail>) => {
   if (ev.detail.role === "confirm") {
-    message.value = `Hello, ${ev.detail.data}!`;
+    model.value = `Hello, ${ev.detail.data}!`;
   }
 };
 </script>

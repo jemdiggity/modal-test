@@ -14,7 +14,7 @@
       <ion-button id="open-modal" expand="block">Open</ion-button>
 
       <p>{{ message }}</p>
-      <InlineModal></InlineModal>
+      <InlineModal v-model="message"></InlineModal>
     </ion-content>
   </ion-page>
 </template>

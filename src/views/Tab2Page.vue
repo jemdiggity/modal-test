@@ -13,7 +13,11 @@
       </ion-header>
       <ion-button id="open_modal2" expand="block">Open</ion-button>
       <p>{{ message }}</p>
-      <InlineModal v-model="message" trigger="open_modal2"></InlineModal>
+      <InlineModal
+        v-model="message"
+        trigger="open_modal2"
+        navigation="tab3"
+      ></InlineModal>
     </ion-content>
   </ion-page>
 </template>

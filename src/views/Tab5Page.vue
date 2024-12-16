@@ -2,21 +2,21 @@
   <ion-page>
     <ion-header>
       <ion-toolbar>
-        <ion-title>Tab 1</ion-title>
+        <ion-title>Tab 5</ion-title>
       </ion-toolbar>
     </ion-header>
     <ion-content class="ion-padding" :fullscreen="true">
       <ion-header collapse="condense">
         <ion-toolbar>
-          <ion-title size="large">Tab 1</ion-title>
+          <ion-title size="large">Tab 5</ion-title>
         </ion-toolbar>
       </ion-header>
-      <ion-button id="open_modal1" expand="block">Open</ion-button>
+      <ion-button id="open_modal5" expand="block">Open</ion-button>
       <p>{{ message }}</p>
       <InlineModal
         v-model="message"
-        trigger="open_modal1"
-        navigation="/tabs2/tab4"
+        trigger="open_modal5"
+        navigation="tab6"
       ></InlineModal>
     </ion-content>
   </ion-page>
